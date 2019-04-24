@@ -1,7 +1,7 @@
 const models = require('../models');
+const { randomInt } = require('../lib/util');
 
-const randomInt = (max = 100) => Math.ceil(Math.random() * max);
-const randomAmount = () => randomInt(100) - randomInt(200);
+const randomAmount = () => randomInt(100) - randomInt(100);
 const randomNames = ['Kamren Sawyer', 'Fabian Meadows', 'Genesis Stewart', 'Jayla Crawford', 'Kristina Lynn', 'Louis Ware', 'Harper Compton', 'Jaslene Stanton', 'Justine Dodson', 'Alejandra Bauer', 'Ray Mcneil', 'Kaiya Carr'];
 
 (async () => {
