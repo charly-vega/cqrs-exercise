@@ -7,7 +7,6 @@ setInterval(
     console.time(timeToken);
     
     const randomUserId = 1 + randomInt(99);
-    console.log(randomUserId);
     
     models.sequelize.query(`
       SELECT users.id, users.fullName, accounts.id, currency, sum(amount) 

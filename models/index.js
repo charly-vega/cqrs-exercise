@@ -3,7 +3,7 @@ const Sequelize = require('sequelize');
 // initialize connection
 const sequelize = new Sequelize({
   dialect: 'sqlite',
-  storage: './db.sqlite',
+  storage: process.env.DB_STORAGE_PATH || './db.sqlite',
   logging: false,
   retry: 0,
 });
