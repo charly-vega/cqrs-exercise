@@ -7,13 +7,20 @@
     "console": "node --experimental-repl-await",
     "read": "node ./scripts/read.js",
     "write": "node ./scripts/write.js",
-    "setup": "node ./scripts/setup.js"
+    "setup": "node ./scripts/setup.js",
+    "bull-ui": "node ./scripts/bull-ui.js",
+    "sync": "nodemon ./scripts/sync.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bull": "^3.7.0",
+    "bull-arena": "^2.6.2",
+    "express": "^4.16.4",
     "sequelize": "^5.7.4",
     "sqlite3": "^4.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }
