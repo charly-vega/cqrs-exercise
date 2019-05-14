@@ -8,8 +8,8 @@ module.exports = (sequelize, types) =>
         autoIncrement: true,
       },
       concept: {
-	type: types.STRING,
-	allowNull: false,
+        type: types.STRING,
+        allowNull: false,
       },
       amount: {
         type: types.DECIMAL(12, 2),

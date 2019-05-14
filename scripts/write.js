@@ -34,9 +34,9 @@ const extractIds = xs => xs.map(({ id }) => id);
     for (;;) {
       amount = randomAmount();
       balanceEntry = {
-	accountId: accountIds[randomInt(accountIds.length)],
-	amount,
-	concept: amount >= 0 ? 'deposit' : 'withdrawal'
+        accountId: accountIds[randomInt(accountIds.length)],
+        amount,
+        concept: amount >= 0 ? 'deposit' : 'withdrawal'
       };
       console.log(balanceEntry);
       // await models.Balance.create(balanceEntry);

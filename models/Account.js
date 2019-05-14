@@ -8,8 +8,8 @@ module.exports = (sequelize, types) =>
         autoIncrement: true,
       },
       currency: {
-	type: types.STRING,
-	allowNull: false,
+        type: types.STRING,
+        allowNull: false,
       },
     },
     {
